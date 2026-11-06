@@ -1,5 +1,12 @@
 # contra-pocket-mod
 
+<p align="center">
+  <img src="https://img.shields.io/badge/device-RK3128-blue?style=flat-square" alt="Device: RK3128">
+  <img src="https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/docker-toolchain-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker toolchain">
+  <img src="https://img.shields.io/badge/license-MIT%20%2F%20GPL--3.0-green?style=flat-square" alt="License: MIT / GPL-3.0">
+</p>
+
 Firmware modding toolkit for the **My Arcade Contra Pocket Player** handheld. Replaces the stock launcher with a custom game menu that lets you load your own arcade ROMs, then rebuilds the NAND image for flashing back to the device.
 
 <div align="center">
@@ -208,6 +215,11 @@ rkflashtool w 0 262144 < /path/to/your/backup/nand_dump.bin
 - **Cleanup** -- remove the Docker volume when you're done: `docker volume rm contra-rootfs`
 - **Dry run** -- use `uv run tools/mod.py --dry-run` to preview all actions without executing them.
 - **Multiplayer** -- two-player mode via the CO/VS link cable is partially supported but needs more testing. Some games may desync during play, and the multiplayer option currently appears for all games regardless of whether they actually support it.
+
+## Acknowledgments
+
+- [MyArcadeContraDoc](https://github.com/MrMiracleMan111/MyArcadeContraDoc) by MrMiracleMan111: figured it out while it was unclear if my Part II blog would ever see the light of day. Great work, and worth a read for the neat ADB-over-USB trick.
+- Built on [MiniGUI](https://github.com/VincentWei/MiniGUI), [Buildroot](https://buildroot.org), [rkflashtool](https://github.com/linux-rockchip/rkflashtool), and [libretro](https://www.libretro.com).
 
 ## License
 
