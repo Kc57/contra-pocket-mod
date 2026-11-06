@@ -1,0 +1,11 @@
+services:
+  toolchain:
+    build: .
+    image: contra-toolchain
+    volumes:
+      - ${CONTRA_PROJECT:-..}:/work
+      - contra-rootfs:/staging
+
+volumes:
+  contra-rootfs:
+    external: true

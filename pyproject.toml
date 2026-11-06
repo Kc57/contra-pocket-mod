@@ -1,0 +1,8 @@
+[project]
+name = "contra-pocket-mod"
+version = "0.1.0"
+description = "Firmware modding toolkit for the My Arcade Contra Pocket Player handheld"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=14.3.3",
+]

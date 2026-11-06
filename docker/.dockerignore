@@ -1,0 +1,6 @@
+# The Docker build context is the docker/ directory.
+# The Dockerfile doesn't COPY from context, but keep this
+# file to avoid sending unnecessary files if that changes.
+.env
+.env.example
+compose.yaml

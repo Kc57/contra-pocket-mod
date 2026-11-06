@@ -1,0 +1,5 @@
+Source: https://github.com/VincentWei/MiniGUI
+Tag: ver-3-2-3 (56fd0a10500e60512c6ed20ecabe2db12523fdc4)
+License: GPL-3.0 (see header files for full text)
+
+mgconfig.h is project-specific and not from upstream.

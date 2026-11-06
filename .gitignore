@@ -1,0 +1,29 @@
+# Build artifacts (compiled binaries, rebuilt firmware images)
+build/*
+!build/.gitkeep
+
+# Firmware binaries (large, regenerated from dumps)
+firmware/dumps/*
+!firmware/dumps/.gitkeep
+firmware/extracted/
+
+# ROM zips (belt-and-suspenders, ROMS/fzip/.gitignore handles this too)
+ROMS/fzip/*.zip
+
+# Object files
+apps/*/src/*.o
+
+# Docker local env
+docker/.env
+
+# OS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# User-local pipeline config (use mod_config.example.yaml as template)
+mod_config.yaml

@@ -1,0 +1,9 @@
+# contra-pocket-mod configuration
+# Copy to mod_config.yaml and adjust paths as needed.
+firmware_dump: firmware/dumps/nand_original.bin
+output_dir: build/firmware
+compile_launcher: true
+mods:
+  install_launcher: true
+  roms:
+    source_dir: ROMS/fzip
