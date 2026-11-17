@@ -7,7 +7,9 @@
   <img src="https://img.shields.io/badge/license-MIT%20%2F%20GPL--3.0-green?style=flat-square" alt="License: MIT / GPL-3.0">
 </p>
 
-Firmware modding toolkit for the **My Arcade Contra Pocket Player** handheld. Replaces the stock launcher with a custom game menu that lets you load your own arcade ROMs, then rebuilds the NAND image for flashing back to the device.
+Firmware modding toolkit for the **My Arcade Contra Pocket Player** handheld. Replaces the stock launcher with a custom game menu that lets you load your own games, then rebuilds the NAND image for flashing back to the device.
+
+**Write-up:** [Part I](https://trustedsec.com/blog/hacking-the-my-arcade-contra-pocket-player-part-i) · [Part II](https://trustedsec.com/blog/hacking-the-my-arcade-contra-pocket-player-part-ii) on the TrustedSec blog
 
 <div align="center">
   <a href="https://youtu.be/FkxIYgoh6bo"><img src="images/launcher.gif" width="480" alt="Custom launcher running on the My Arcade Contra Pocket Player"></a>
@@ -218,8 +220,12 @@ rkflashtool w 0 262144 < /path/to/your/backup/nand_dump.bin
 
 ## Acknowledgments
 
-- [MyArcadeContraDoc](https://github.com/MrMiracleMan111/MyArcadeContraDoc) by MrMiracleMan111: figured it out while it was unclear if my Part II blog would ever see the light of day. Great work, and worth a read for the neat ADB-over-USB trick.
+- [MyArcadeContraDoc](https://github.com/MrMiracleMan111/MyArcadeContraDoc) by MrMiracleMan111: figured it out while it was unclear if my [Part II blog](https://trustedsec.com/blog/hacking-the-my-arcade-contra-pocket-player-part-ii) would ever see the light of day. Great work, and worth a read for the neat ADB-over-USB trick.
 - Built on [MiniGUI](https://github.com/VincentWei/MiniGUI), [Buildroot](https://buildroot.org), [rkflashtool](https://github.com/linux-rockchip/rkflashtool), and [libretro](https://www.libretro.com).
+
+## Author
+
+Rob Simon ([@_Kc57](https://x.com/_Kc57)). Both parts of the write-up are also on my personal blog, alongside other hardware and security projects: [kc57.com](https://kc57.com).
 
 ## License
 
