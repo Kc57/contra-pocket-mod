@@ -9,7 +9,10 @@
 
 Firmware modding toolkit for the **My Arcade Contra Pocket Player** handheld. Replaces the stock launcher with a custom game menu that lets you load your own games, then rebuilds the NAND image for flashing back to the device.
 
-**Write-up:** [Part I](https://trustedsec.com/blog/hacking-the-my-arcade-contra-pocket-player-part-i) · [Part II](https://trustedsec.com/blog/hacking-the-my-arcade-contra-pocket-player-part-ii) on the TrustedSec blog
+**Read the write-up on the TrustedSec blog:**
+
+- [Part I: Teardown and NAND dump](https://trustedsec.com/blog/hacking-the-my-arcade-contra-pocket-player-part-i)
+- [Part II: Firmware analysis, custom menu, and modding toolkit](https://trustedsec.com/blog/hacking-the-my-arcade-contra-pocket-player-part-ii)
 
 <div align="center">
   <a href="https://youtu.be/FkxIYgoh6bo"><img src="images/launcher.gif" width="480" alt="Custom launcher running on the My Arcade Contra Pocket Player"></a>
